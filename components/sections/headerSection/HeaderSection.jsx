@@ -4,7 +4,7 @@ const HeaderSection = () => {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       <Image
-        src="/headerImage.webp"
+        src="/ivo_eskiz_ortographic.jpg"
         alt="header"
         fill
         className="object-cover rounded-b-4xl p-2"

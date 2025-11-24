@@ -7,9 +7,11 @@ import TwoTypeSection from "../../components/sections/twoTypeSection/TwoTypeSect
 import VideoIntroSection from "../../components/sections/videoIntroSection/VideoIntroSection";
 import BasicSection1 from "../../components/sections/basicSections/BasicSection1";
 import BasicSection2 from "../../components/sections/basicSections/BasicSection2";
+import TechnicalSection from "../../components/sections/introSection/TechnicalSection";
 
 import Lenis from "lenis";
 import { useEffect } from "react";
+import HorizontalScroll from "../../components/sections/introSection/HorizontalScroll";
 
 const Home = () => {
   useEffect(() => {
@@ -31,8 +33,10 @@ const Home = () => {
       <IntroSection />
       <VideoIntroSection />
       <BasicSection1 />
+      <TechnicalSection />
       <TwoTypeSection />
       <BasicSection2 />
+      <HorizontalScroll />
       <ProductColorSelector />
       <div className="min-h-screen w-full bg-bej"></div>
       <div className="min-h-screen w-full bg-yesil"></div>
