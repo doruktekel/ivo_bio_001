@@ -1,14 +1,108 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const BasicSection1 = () => {
+  const sectionRef = useRef(null);
+  const title1Ref = useRef(null);
+  const title2Ref = useRef(null);
+  const leftLineRef = useRef(null);
+  const rightLineRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Timeline oluştur
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+          end: "top 20%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      // Sol çizgi - soldan sağa açılarak geliyor
+      tl.from(
+        leftLineRef.current,
+        {
+          width: 0,
+          duration: 2,
+          ease: "power3.out",
+        },
+        0
+      );
+
+      // Sağ çizgi - sağdan sola açılarak geliyor
+      tl.from(
+        rightLineRef.current,
+        {
+          width: 0,
+          duration: 2,
+          ease: "power3.out",
+        },
+        2
+      );
+
+      // İlk başlık - fade in ve yukarıdan gelme
+      tl.from(
+        title1Ref.current,
+        {
+          opacity: 0,
+          y: 60,
+          duration: 2,
+          ease: "power2.out",
+        },
+        1
+      );
+
+      // İkinci başlık - fade in ve yukarıdan gelme
+      tl.from(
+        title2Ref.current,
+        {
+          opacity: 0,
+          y: 60,
+          duration: 2,
+          ease: "power2.out",
+        },
+        1.5
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className="h-screen w-full flex justify-center items-center relative">
+    <div
+      ref={sectionRef}
+      className="h-screen w-full flex justify-center items-center relative"
+    >
       <div className="flex flex-col gap-2 text-center">
-        <p className="text-8xl font-extrabold selection:bg-yesil">
-          Yaşama dair herşey
+        <p
+          ref={title1Ref}
+          className="text-[120px] text-sari font-quicksand font-medium selection:bg-yesil"
+        >
+          Doğayla Bütünleş
         </p>
-        <p className="text-8xl font-extrabold">Farkındalık Mutluluk Huzur</p>
+        <p ref={title2Ref} className="text-[80px] font-quicksand">
+          Yeni Nesil Yaşam Alanlarını Keşfet
+        </p>
       </div>
-      <div className="absolute bg-yesil w-[400px] h-4 rounded-r-full left-0 top-180 "></div>
-      <div className="absolute bg-bej w-[400px] h-4 rounded-l-full right-0 top-44 "></div>
+
+      {/* Sol çizgi - soldan sağa açılıyor */}
+      <div
+        ref={leftLineRef}
+        className="absolute bg-yesil w-[400px] h-4 rounded-r-full left-0 top-[20%] origin-left"
+      ></div>
+
+      {/* Sağ çizgi - sağdan sola açılıyor */}
+      <div
+        ref={rightLineRef}
+        className="absolute bg-bej w-[400px] h-4 rounded-l-full right-0 top-[80%] origin-right"
+      ></div>
     </div>
   );
 };

@@ -8,10 +8,10 @@ import VideoIntroSection from "../../components/sections/videoIntroSection/Video
 import BasicSection1 from "../../components/sections/basicSections/BasicSection1";
 import BasicSection2 from "../../components/sections/basicSections/BasicSection2";
 import TechnicalSection from "../../components/sections/introSection/TechnicalSection";
+import HorizontalScroll from "../../components/sections/introSection/HorizontalScroll";
 
 import Lenis from "lenis";
 import { useEffect } from "react";
-import HorizontalScroll from "../../components/sections/introSection/HorizontalScroll";
 
 const Home = () => {
   useEffect(() => {
