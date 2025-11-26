@@ -136,10 +136,8 @@ const HeaderSection = () => {
       backgroundRef.current,
       {
         y: 0,
-        scale: 1,
       },
       {
-        scale: 1.1,
         y: 100,
         scrollTrigger: {
           trigger: headerRef.current,
@@ -177,12 +175,12 @@ const HeaderSection = () => {
         priority
       />
 
-      <div className="absolute top-[135] left-1/2 -translate-x-1/2 text-center z-10 max-w-7xl mx-auto">
+      <div className="absolute top-[100] left-1/2 -translate-x-1/2 text-center z-10 container mx-auto">
         <p
           ref={textRef}
-          className="text-[120px] font-medium tracking-wide leading-32 text-kahverengi select-none font-quicksand"
+          className="text-[130px] font-semibold tracking-wide leading-36 text-kahverengi select-none font-quicksand"
         >
-          Doğal yaşam çizginiz...
+          Doğal yaşam <br /> çizginiz...
         </p>
       </div>
     </div>
