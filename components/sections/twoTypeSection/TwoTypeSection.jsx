@@ -7,8 +7,8 @@ const TwoTypeSection = () => {
   const [hover, setHover] = useState(null);
 
   return (
-    <div className="h-screen w-full">
-      <div className="grid grid-cols-10 h-full transition-all duration-500">
+    <div className="h-screen w-full bg-gri">
+      <div className="grid grid-cols-10 h-full transition-all duration-500 p-2">
         {/* LEFT SIDE */}
         <div
           className={`
@@ -24,7 +24,12 @@ const TwoTypeSection = () => {
           onMouseEnter={() => setHover("left")}
           onMouseLeave={() => setHover(null)}
         >
-          <Image src="/blue.webp" alt="blue" fill className="object-cover" />
+          <Image
+            src="/blue.webp"
+            alt="blue"
+            fill
+            className="object-cover rounded-4xl"
+          />
 
           {hover === "left" && (
             <div className="absolute bottom-4 left-4 p-8 max-w-sm bg-white/20 backdrop-blur-xl border border-white/30 rounded-2xl shadow-lg text-kahverengi select-none">
@@ -53,7 +58,12 @@ const TwoTypeSection = () => {
           onMouseEnter={() => setHover("right")}
           onMouseLeave={() => setHover(null)}
         >
-          <Image src="/pink.webp" alt="pink" fill className="object-cover" />
+          <Image
+            src="/pink.webp"
+            alt="pink"
+            fill
+            className="object-cover rounded-4xl"
+          />
           {hover === "right" && (
             <div className="absolute bottom-4 right-4 p-8 max-w-sm bg-white/20 backdrop-blur-xl border border-white/30 rounded-2xl shadow-lg text-kahverengi select-none">
               <p className="font-extrabold">

@@ -154,16 +154,21 @@ const TechnicalSection = () => {
                 transform: index === 0 ? "translateY(0%)" : "translateY(100%)",
               }}
             >
-              <h1 className="text-3xl text-center font-extrabold text-gray-700">
+              <h1
+                className="text-3xl text-center font-extrabold text-gray-700 border-b
+              border-gray-700
+              
+              "
+              >
                 {index === 0 ? "Teknoloji" : item.title}
               </h1>
 
               <div className="flex flex-col items-center my-4">
-                <div className="w-full h-[2px] bg-gray-300 my-6"></div>
-                <p className="font-bold text-gray-600 text-justify leading-relaxed text-base">
+                {/* <div className="w-full h-[2px] bg-gray-300 my-6"></div> */}
+                <p className="font-bold text-gray-600 text-justify leading-relaxed text-base my-16">
                   {item.description}
                 </p>
-                <div className="w-full h-[2px] bg-gray-300 my-6"></div>
+                <div className="w-40 h-[2px] bg-gray-300 my-6"></div>
               </div>
 
               <div className="flex justify-center mt-6">

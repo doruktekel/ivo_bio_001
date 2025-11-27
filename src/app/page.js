@@ -62,6 +62,7 @@ import BasicSection1 from "../../components/sections/basicSections/BasicSection1
 import BasicSection2 from "../../components/sections/basicSections/BasicSection2";
 import TechnicalSection from "../../components/sections/introSection/TechnicalSection";
 import HorizontalScroll from "../../components/sections/introSection/HorizontalScroll";
+import FaqSection from "../../components/sections/faq/FaqSection";
 
 const Home = () => {
   useEffect(() => {
@@ -96,6 +97,7 @@ const Home = () => {
       <BasicSection2 />
       <HorizontalScroll />
       <ProductColorSelector />
+      <FaqSection />
       <div className="min-h-screen w-full bg-bej"></div>
       <div className="min-h-screen w-full bg-yesil"></div>
       <div className="min-h-screen w-full bg-gri"></div>
