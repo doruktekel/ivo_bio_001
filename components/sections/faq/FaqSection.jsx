@@ -33,6 +33,72 @@ const FaqSection = () => {
     },
   ];
 
+  // useEffect(() => {
+  //   const section = sectionRef.current;
+
+  //   ScrollTrigger.create({
+  //     trigger: section,
+  //     start: "top top",
+  //     end: "+=100%",
+  //     pin: true,
+  //     pinSpacing: true,
+  //     anticipatePin: 1,
+  //   });
+
+  //   const faqItems = section.querySelectorAll(".faq-item");
+  //   faqItems.forEach((item, index) => {
+  //     gsap.fromTo(
+  //       item,
+  //       {
+  //         opacity: 0,
+  //         y: 50,
+  //         scale: 0.95,
+  //       },
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         scale: 1,
+  //         duration: 0.8,
+  //         ease: "power3.out",
+  //         scrollTrigger: {
+  //           trigger: section,
+  //           start: "top top",
+  //           end: "bottom top",
+  //           scrub: 1,
+  //           onEnter: () => {
+  //             gsap.to(item, {
+  //               opacity: 1,
+  //               y: 0,
+  //               scale: 1,
+  //               duration: 0.6,
+  //               delay: index * 0.1,
+  //             });
+  //           },
+  //         },
+  //       }
+  //     );
+  //   });
+
+  //   gsap.fromTo(
+  //     section.querySelector(".faq-title"),
+  //     { opacity: 0, y: -30 },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 1,
+  //       ease: "power3.out",
+  //       scrollTrigger: {
+  //         trigger: section,
+  //         start: "top center",
+  //       },
+  //     }
+  //   );
+
+  //   return () => {
+  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  //   };
+  // }, []);
+
   useEffect(() => {
     const section = sectionRef.current;
 
@@ -46,56 +112,46 @@ const FaqSection = () => {
       anticipatePin: 1,
     });
 
-    // Animate FAQ items
+    // Animate title
+    gsap.fromTo(
+      section.querySelector(".faq-title"),
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    // Animate FAQ items with simple fade in
     const faqItems = section.querySelectorAll(".faq-item");
     faqItems.forEach((item, index) => {
       gsap.fromTo(
         item,
         {
           opacity: 0,
-          y: 50,
-          scale: 0.95,
+          y: 20,
         },
         {
           opacity: 1,
           y: 0,
-          scale: 1,
-          duration: 0.8,
-          ease: "power3.out",
+          duration: 0.6,
+          ease: "power2.out",
+          delay: index * 0.1,
           scrollTrigger: {
             trigger: section,
-            start: "top top",
-            end: "bottom top",
-            scrub: 1,
-            onEnter: () => {
-              gsap.to(item, {
-                opacity: 1,
-                y: 0,
-                scale: 1,
-                duration: 0.6,
-                delay: index * 0.1,
-              });
-            },
+            start: "top 70%",
+            toggleActions: "play none none none",
           },
         }
       );
     });
-
-    // Animate title
-    gsap.fromTo(
-      section.querySelector(".faq-title"),
-      { opacity: 0, y: -30 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: section,
-          start: "top center",
-        },
-      }
-    );
 
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
@@ -110,6 +166,7 @@ const FaqSection = () => {
     <div
       ref={sectionRef}
       className="relative h-screen w-ful bg-gri flex items-center justify-center overflow-hidden font-quicksand"
+      id="sss"
     >
       <div className="relative z-10 max-w-4xl w-full px-6 md:px-8">
         {/* Title */}

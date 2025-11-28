@@ -82,7 +82,7 @@ const GallerySection = () => {
   }, [isModalOpen, selectedImage]);
 
   return (
-    <div className="py-20 px-4 font-quicksand">
+    <div className="py-20 px-4 font-quicksand" id="galeri">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-[120px] font-bold text-yesil mb-4">

@@ -90,7 +90,7 @@ const IntroSection = () => {
   ];
 
   return (
-    <div className="bg-gri relative">
+    <div className="bg-gri relative" id="intro">
       {/* Başlık - Scroll ile kaybolacak */}
       <div
         ref={titleRef}

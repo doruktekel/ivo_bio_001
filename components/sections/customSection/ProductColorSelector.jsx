@@ -1,10 +1,62 @@
-"use client";
+// "use client";
 
-import { useState } from "react";
-import Image from "next/image";
+// import { useState } from "react";
+// import Image from "next/image";
+
+// const ProductColorSelector = () => {
+//   const [color, setColor] = useState("blue");
+
+//   const variants = {
+//     blue: "/blue.webp",
+//     brown: "/brown.webp",
+//     pink: "/pink.webp",
+//   };
+
+//   return (
+//     <div className="h-screen w-full grid grid-cols-3 place-items-center bg-gri ">
+//       {/* Product Image */}
+//       <div className="w-full h-screen relative col-span-2">
+//         <Image
+//           src={variants[color]}
+//           alt="product"
+//           fill
+//           className="object-cover transition-all duration-300 rounded-r-4xl"
+//         />
+//       </div>
+
+//       <div className="flex flex-col gap-4 text-center items-center col-span-1 text-gray-500">
+//         {/* Product Name */}
+//         <h1 className="text-4xl font-bold">IVO Bio</h1>
+//         <p>Kabin Rengi Seciniz</p>
+//         {/* Color Options */}
+//         <div className="flex gap-4">
+//           {Object.keys(variants).map((c) => (
+//             <button
+//               key={c}
+//               onClick={() => setColor(c)}
+//               className={`w-20 h-20 rounded-2xl border cursor-pointer
+//               ${color === c ? "ring-2 ring-offset-2 ring-gray-400" : ""}`}
+//               style={{ backgroundColor: c }}
+//             />
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ProductColorSelector;
+
+"use client";
+import React, { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ProductColorSelector = () => {
   const [color, setColor] = useState("blue");
+  const containerRef = useRef(null);
 
   const variants = {
     blue: "/blue.webp",
@@ -12,29 +64,58 @@ const ProductColorSelector = () => {
     pink: "/pink.webp",
   };
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: containerRef.current,
+        start: "top top",
+        end: "+=100%",
+        pin: true,
+        pinSpacing: true,
+        scrub: true,
+      });
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className="h-screen w-full grid grid-cols-3 place-items-center bg-gri ">
+    <div
+      ref={containerRef}
+      className="h-screen w-full grid grid-cols-3 place-items-center bg-gri font-quicksand"
+      id="kisisel"
+    >
       {/* Product Image */}
       <div className="w-full h-screen relative col-span-2">
-        <Image
+        <img
           src={variants[color]}
           alt="product"
-          fill
-          className="object-cover transition-all duration-300 rounded-r-4xl"
+          className="w-full h-full object-cover transition-all duration-300 rounded-r-4xl"
         />
       </div>
 
-      <div className="flex flex-col gap-4 text-center items-center col-span-1 text-gray-500">
+      <div className="h-screen flex flex-col gap-4 text-center items-center justify-between col-span-1 text-gray-500 px-4 py-60">
         {/* Product Name */}
-        <h1 className="text-4xl font-bold">IVO Bio</h1>
-        <p>Kabin Rengi Seciniz</p>
+        <h1 className="text-4xl font-bold ">
+          IVO Bio'yu Kendi Zevkine Göre Baştan Yarat <br /> IVO Bio'nu
+          Özelleştir
+        </h1>
+        <div className="bg-white w-full h-[1px]"></div>
+        <p className="text-2xl text-left font-medium">
+          Lütfen Kabin Renginizi Seciniz
+        </p>
+        <p className="text-lg text-left">
+          Yaşadığınız yeri renklendirin, ruhunuzu ortaya koyun. Kabin renginiz,
+          iç dünyanızı dışa yansıtan bir dokunuş olsun.
+        </p>
+
         {/* Color Options */}
         <div className="flex gap-4">
           {Object.keys(variants).map((c) => (
             <button
               key={c}
               onClick={() => setColor(c)}
-              className={`w-9 h-9 rounded-full border cursor-pointer 
+              className={`w-14 h-14 rounded-2xl border cursor-pointer
               ${color === c ? "ring-2 ring-offset-2 ring-gray-400" : ""}`}
               style={{ backgroundColor: c }}
             />
