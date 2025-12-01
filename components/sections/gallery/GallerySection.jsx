@@ -183,7 +183,7 @@ const GallerySection = () => {
   const galleryRef = useRef(null);
 
   // Pinterest tarzı farklı yüksekliklerde görseller
-  const images = Array.from({ length: 7 }, (_, i) => {
+  const images = Array.from({ length: 21 }, (_, i) => {
     const heights = [250, 300, 350, 400, 320, 380, 280];
     return {
       id: i,
