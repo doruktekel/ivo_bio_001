@@ -12,24 +12,50 @@ const FaqSection = () => {
 
   const faqs = [
     {
-      question: "Projeleriniz ne kadar sürede teslim edilir?",
+      question: "İVO BİO nedir ?",
       answer:
-        "Proje süreleri, projenin kapsamına göre değişiklik gösterir. Ortalama bir web sitesi projesi 2-4 hafta içinde teslim edilmektedir.",
+        "İVO BİO doğayla uyumlu, modüler, enerji dostu ve dört mevsim kullanılabilir yaşam alanları sunan modern bir konut çözümüdür. Eşsiz mimarisi ve sürdürülebilir yapısı ile konforlu yeni nesil bir yaşam alanı deneyimi sunar.",
     },
     {
-      question: "Hangi teknolojileri kullanıyorsunuz?",
+      question: "İVO BİO yapıları hangi malzemelerle üretiliyor ?",
       answer:
-        "React, Next.js, GSAP, Three.js, Tailwind CSS gibi modern ve güncel teknolojiler kullanarak projeler geliştiriyoruz.",
+        "İVO BİO modülleri; çelik konstrüksiyon, yüksek yalıtımlı paneller, Low-E camlar, doğa dostu iç kaplamalar ve geri dönüşümlü dış cephe malzemeleri ile üretilir.",
     },
     {
-      question: "Destek hizmeti sunuyor musunuz?",
+      question: "Dört mevsim kullanım için uygun mu ?",
       answer:
-        "Evet, proje tesliminden sonra 3 ay ücretsiz destek ve bakım hizmeti sunuyoruz. Sonrasında aylık bakım paketlerimiz mevcuttur.",
+        "Evet, yaz kış ayrımı yapmadan İVO BİO'da yaşayabilirsiniz. Isı pompası, yüksek yalıtım, Low-E camlar ve isteğe bağlı yerden ısıtma ile yılın 12 ayı konforlu kullanım sağlar.  ",
     },
     {
-      question: "Fiyatlandırma nasıl çalışıyor?",
+      question: "Taşınabilir mi ?",
       answer:
-        "Her proje kendine özgüdür. Detaylı bir görüşme sonrası, ihtiyaçlarınıza özel teklif hazırlıyoruz.",
+        "Evet. Modüler yapısı sayesinde hem tekli hem çoklu modüller taşınabilir. Taşıma ve nakil süreçleri oldukça hızlıdır.",
+    },
+
+    {
+      question: "Enerji ihtiyacı nasıl karşılanıyor ?",
+      answer:
+        "İVO BİO güneş panelleri, akıllı inverter sistemleri ve lityum batarya depolama ile enerji ihtiyacını kendi üretebilen bir yapıdır. Elektrik şebekesine bağlanmadan off-grid olarak da çalışabilir. Geleneksel yapılara göre %40–70 arası enerji tasarrufu sağlayabilir.",
+    },
+    {
+      question: "Akıllı ev teknolojisine uyumlu mu ?",
+      answer:
+        "Evet uyumludur. Işıklar, ısıtma-soğutma sistemleri, enerji tüketimi, güvenlik kameraları ve kapı kontrolleri mobil uygulama üzerinden yönetilebilir.",
+    },
+    {
+      question: "İVO BİO projeleri ne kadar sürede teslim edilir ?",
+      answer:
+        "Proje süreleri, projenin kapsamına göre değişiklik gösterir. İVO BİO'nun projeleri 3-4 hafta arasında teslim edilir.",
+    },
+    // {
+    //   question: "Proje yasal izin gerektiriyor mu ?",
+    //   answer:
+    //     "Kullanım alanı ve belediye yönetmeliklerine göre değişir. Hafif yapı sınıfına girdiği için çoğu bölgede izin süreçleri kolaydır.",
+    // },
+    {
+      question: "Destek hizmeti sunuyor musunuz ? Garanti süresi var mı ?",
+      answer:
+        "Evet, proje tesliminden sonraki 1 yıl boyunca ücretsiz destek ve bakım hizmeti sunuyoruz. Yapısal garanti 5 yıl, elektrik–mekanik sistemler için 2 yıl garanti sunulmaktadır. Destek hizmeti ile ilgili daha fazla bilgi almak isterseniz bize e-posta veya telefona yazabilirsiniz.",
     },
   ];
 
@@ -168,15 +194,15 @@ const FaqSection = () => {
       className="relative h-screen w-ful bg-gri flex items-center justify-center overflow-hidden font-quicksand"
       id="sss"
     >
-      <div className="relative z-10 max-w-4xl w-full px-6 md:px-8">
+      <div className="relative z-10 max-w-7xl w-full px-5 md:px-7">
         {/* Title */}
-        <h2 className="faq-title text-4xl md:text-6xl font-bold text-white/90 text-center mb-12 md:mb-16">
+        <h2 className="faq-title text-3xl md:text-5xl font-bold text-white/90 text-center mb-6 md:mb-8">
           Sıkça Sorulan
           <span className="bg-clip-text"> Sorular</span>
         </h2>
 
         {/* FAQ Items */}
-        <div className="space-y-4">
+        <div className="space-y-2">
           {faqs.map((faq, index) => (
             <div
               key={index}
@@ -184,7 +210,7 @@ const FaqSection = () => {
             >
               <button
                 onClick={() => toggleFaq(index)}
-                className="w-full px-6 md:px-8 py-5 md:py-6 text-left flex items-center justify-between group cursor-pointer"
+                className="w-full px-4 md:px-6 py-4 md:py-5 text-left flex items-center justify-between group cursor-pointer"
               >
                 <span className="text-lg md:text-xl font-semibold text-kahverengi group-hover:text-kahverengi transition-colors">
                   {faq.question}

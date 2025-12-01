@@ -97,7 +97,7 @@ const ProductColorSelector = () => {
       <div className="h-screen flex flex-col gap-4 text-center items-center justify-between col-span-1 text-gray-500 px-4 py-60">
         {/* Product Name */}
         <h1 className="text-4xl font-bold ">
-          IVO Bio'yu Kendi Zevkine Göre Baştan Yarat <br /> IVO Bio'nu
+          İVO BİO'yu Kendi Zevkine Göre Baştan Yarat <br /> İVO BİO'nu
           Özelleştir
         </h1>
         <div className="bg-white w-full h-[1px]"></div>
