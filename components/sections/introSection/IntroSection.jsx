@@ -16,7 +16,7 @@ const IntroSection = () => {
         trigger: sectionsRef.current[0],
         start: "top bottom",
         end: "top center",
-        scrub: 1,
+        scrub: 2,
       },
       opacity: 0,
       y: -100,

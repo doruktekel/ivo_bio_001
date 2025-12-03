@@ -17,6 +17,7 @@ import Footer from "../../components/footer/Footer";
 import ContactForm from "../../components/formSection/ContactForm";
 import ScrollTop from "../../components/scrollTop/ScrollTop";
 import ScrollVideo from "../../components/scrollVideo/ScrollVideo";
+import PricingSection from "../../components/sections/pricing/PricingSection";
 
 const Home = () => {
   useEffect(() => {
@@ -52,6 +53,7 @@ const Home = () => {
       <BasicSection2 />
       {/* <HorizontalScroll /> */}
       <ProductColorSelector />
+      <PricingSection />
       <ContactForm />
       <GallerySection />
       <FaqSection />
