@@ -115,11 +115,26 @@ const IntroSection = () => {
       {/* Başlık - Scroll ile kaybolacak */}
       <div
         ref={titleRef}
-        className="h-screen flex items-center justify-center sticky top-0 z-10"
+        className="h-screen flex flex-col items-center justify-center gap-10 sticky top-0 z-10 p-20"
       >
-        <h1 className="font-quicksand text-[220px] font-bold text-center leading-tight">
+        <h1 className="font-quicksand text-[120px] font-bold text-center leading-tight">
           <span className="text-yesil">İVO Bio</span> <br /> İle Tanışın
         </h1>
+        <p className=" max-w-4xl text-justify font-quicksand text-2xl font-bold text-kahverengi">
+          İVO Bio, ister şehir merkezinde ister kırsalda, isterse ekstrem iklim
+          koşullarında olsun her yerde konforlu yaşam sunmak için tasarlanan
+          yeni nesil bir yapıdır. Geniş iç hacmi, yüksek yalıtımlı gövdesi ve
+          gelişmiş iklimlendirme sistemleri sayesinde yazın çöl sıcaklarında,
+          kışın kutup soğuklarında bile ideal yaşam sıcaklığını korur. Dayanıklı
+          yapısı ve modüler tasarımı sayesinde farklı arazi ve kullanım
+          ihtiyaçlarına kolayca uyum sağlar. Hem modern bir şehir hayatına
+          entegre olabilir hem de doğadan uzakta bağımsız bir yaşam alanı
+          oluşturabilir. İVO Bio, sizi bulunduğunuz yere değil, sizin
+          ihtiyaçlarınıza göre şekillenen esnek ve güvenli bir yaşam deneyimiyle
+          tanıştırır
+        </p>
+
+        <p></p>
       </div>
 
       {sections.map((section, index) => (

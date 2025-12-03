@@ -82,7 +82,7 @@ const PricingSection = () => {
       image: "/icons/light_icon.png",
     },
     {
-      name: "Pro",
+      name: "Full",
       price: "$99",
       period: "/ay",
       description: "Tam donanımlı, yaşamaya hazır premium İVO Bio deneyimi.",
