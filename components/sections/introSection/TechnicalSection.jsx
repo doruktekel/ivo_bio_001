@@ -19,7 +19,7 @@ const TechnicalSection = () => {
       title: "İVO Bio Teknik",
       description:
         "Doğal çevreyle uyumlu, organik kompozit yapı teknolojisiyle üretilen İVO Bio 85 m² büyüklüğünde, modern ve fonksiyonel bir 2+1 yaşam alanı sunar. <br /> <br />  1-) 1700 cm uzunluk      <br /> 2-) 530 cm genişlik      <br /> 3-) 360 cm yükseklik",
-      video: "/infography/01.mp4",
+      video: "/infography/001.mp4",
       // image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=1200&h=800&fit=crop",
       videoUrl: "https://www.youtube.com/watch?v=I1unv9CqMNA",
     },
@@ -28,7 +28,7 @@ const TechnicalSection = () => {
       title: "Altyapı Sistemleri",
       description:
         "İVO Bio, tam donanımlı ve kendi kendine yetebilen altyapı sistemleriyle öne çıkar. Güçlü su yönetimi, yüksek kapasiteli atık çözümü ve yenilenebilir enerji üretimi sayesinde kullanıcıya bağımsız bir yaşam deneyimi sunar.<br /><br />• 10 ton temiz su kapasitesi<br />• 10 ton foseptik depolama sistemi<br />• 10 kW güneş enerjisi üretim kapasitesi",
-      video: "/infography/02.mp4",
+      video: "/infography/002.mp4",
       videoUrl: "https://www.youtube.com/watch?v=I1unv9CqMNA",
     },
     {
@@ -36,7 +36,7 @@ const TechnicalSection = () => {
       title: "Yapı Özellikleri",
       description:
         "İVO Bio, dayanıklı taşıyıcı sistemler, gelişmiş yalıtım çözümleri ve premium dış cephe malzemeleriyle dört mevsim konfor ve güvenilirlik sunar.<br /><br />• 14 ton ağır çelik konstrüksiyon<br />• Isı yalıtımlı doğrama sistemleri<br /> • Çatı penceresi uygulaması<br /> • Cam içi jaluzi sistemi<br /> • Alev almaz 30 density dış duvar köpüğü<br /> • Doğal taş kaplama dış cephe ",
-      video: "/infography/03.mp4",
+      video: "/infography/003.mp4",
       videoUrl: "https://www.youtube.com/watch?v=I1unv9CqMNA",
     },
     {
