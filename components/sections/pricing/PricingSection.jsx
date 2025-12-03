@@ -86,7 +86,7 @@ const PricingSection = () => {
       name: "Pro",
       price: "$99",
       period: "/ay",
-      description: "Tam donanımlı, yaşamaya hazır premium İVO BİO deneyimi.",
+      description: "Tam donanımlı, yaşamaya hazır premium İVO Bio deneyimi.",
       features: [
         "Tüm tesisatlar ve iç işçilik üst düzey tamamlanmış",
         "Sabit ve hareketli mobilyalar dahil",

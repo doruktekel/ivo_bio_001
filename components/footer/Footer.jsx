@@ -100,7 +100,7 @@ const Footer = () => {
               <h2 className="text-4xl font-bold text-white mb-2 tracking-tight">
                 BELEN & PARTNERS
               </h2>
-              <p className="text-white text-4xl mb-4 font-quicksand">İVO BİO</p>
+              <p className="text-white text-4xl mb-4 font-quicksand">İVO Bio</p>
               <p className="text-gray-400 text-base leading-relaxed max-w-md">
                 Modern mimari çözümler ve sürdürülebilir tasarımlarla geleceği
                 birlikte inşa ediyoruz. Her projede estetik, işlevsellik ve

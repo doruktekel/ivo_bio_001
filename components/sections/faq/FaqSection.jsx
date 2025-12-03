@@ -12,14 +12,14 @@ const FaqSection = () => {
 
   const faqs = [
     {
-      question: "İVO BİO nedir?",
+      question: "İVO Bio nedir?",
       answer:
-        "İVO BİO, doğayla uyumlu, modüler ve enerji dostu bir yaşam alanı sunan modern konut çözümüdür. Eşsiz mimarisi ve sürdürülebilir yapısıyla dört mevsim konforlu bir deneyim sağlar.",
+        "İVO Bio, doğayla uyumlu, modüler ve enerji dostu bir yaşam alanı sunan modern konut çözümüdür. Eşsiz mimarisi ve sürdürülebilir yapısıyla dört mevsim konforlu bir deneyim sağlar.",
     },
     {
-      question: "İVO BİO yapıları hangi malzemelerle üretiliyor?",
+      question: "İVO Bio yapıları hangi malzemelerle üretiliyor?",
       answer:
-        "İVO BİO modülleri; çelik konstrüksiyon, yüksek yalıtımlı paneller, Low-E camlar, organik kompozit malzemeler ve doğa dostu iç-dış kaplamalar ile üretilir.",
+        "İVO Bio modülleri; çelik konstrüksiyon, yüksek yalıtımlı paneller, Low-E camlar, organik kompozit malzemeler ve doğa dostu iç-dış kaplamalar ile üretilir.",
     },
     {
       question: "Dört mevsim kullanım için uygun mu?",
@@ -34,7 +34,7 @@ const FaqSection = () => {
     {
       question: "Enerji ihtiyacı nasıl karşılanıyor?",
       answer:
-        "İVO BİO, güneş panelleri, akıllı inverter ve lityum batarya sistemleriyle enerji ihtiyacını kendi karşılar. Elektrik şebekesine bağlanmadan off-grid olarak da çalışabilir. Geleneksel yapılara göre %40–70 enerji tasarrufu sağlar.",
+        "İVO Bio, güneş panelleri, akıllı inverter ve lityum batarya sistemleriyle enerji ihtiyacını kendi karşılar. Elektrik şebekesine bağlanmadan off-grid olarak da çalışabilir. Geleneksel yapılara göre %40–70 enerji tasarrufu sağlar.",
     },
     {
       question: "Akıllı ev teknolojisine uyumlu mu?",
@@ -42,9 +42,9 @@ const FaqSection = () => {
         "Evet. Işıklar, ısıtma-soğutma, enerji yönetimi, güvenlik sistemleri ve kapı kontrolleri mobil uygulama üzerinden yönetilebilir.",
     },
     {
-      question: "İVO BİO projeleri ne kadar sürede teslim edilir?",
+      question: "İVO Bio projeleri ne kadar sürede teslim edilir?",
       answer:
-        "Projelerin teslim süresi kapsam ve özelliklere göre değişmekle birlikte, İVO BİO 7–10 gün içinde üretilip, 1 günde montajı yapılabilir.",
+        "Projelerin teslim süresi kapsam ve özelliklere göre değişmekle birlikte, İVO Bio 7–10 gün içinde üretilip, 1 günde montajı yapılabilir.",
     },
     {
       question: "Destek hizmeti sunuyor musunuz? Garanti süresi var mı?",

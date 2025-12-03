@@ -16,9 +16,9 @@ const TechnicalSection = () => {
   const technicalData = [
     {
       id: 1,
-      title: "İVO BİO Teknik",
+      title: "İVO Bio Teknik",
       description:
-        "Doğal çevreyle uyumlu, organik kompozit yapı teknolojisiyle üretilen İVO BİO 85 m² büyüklüğünde, modern ve fonksiyonel bir 2+1 yaşam alanı sunar. <br /> <br />  1-) 1700 cm uzunluk      <br /> 2-) 530 cm genişlik      <br /> 3-) 360 cm yükseklik",
+        "Doğal çevreyle uyumlu, organik kompozit yapı teknolojisiyle üretilen İVO Bio 85 m² büyüklüğünde, modern ve fonksiyonel bir 2+1 yaşam alanı sunar. <br /> <br />  1-) 1700 cm uzunluk      <br /> 2-) 530 cm genişlik      <br /> 3-) 360 cm yükseklik",
       video: "/infography/01.mp4",
       // image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=1200&h=800&fit=crop",
       videoUrl: "https://www.youtube.com/watch?v=I1unv9CqMNA",
@@ -27,7 +27,7 @@ const TechnicalSection = () => {
       id: 2,
       title: "Altyapı Sistemleri",
       description:
-        "İVO BİO, tam donanımlı ve kendi kendine yetebilen altyapı sistemleriyle öne çıkar. Güçlü su yönetimi, yüksek kapasiteli atık çözümü ve yenilenebilir enerji üretimi sayesinde kullanıcıya bağımsız bir yaşam deneyimi sunar.<br /><br />• 10 ton temiz su kapasitesi<br />• 10 ton foseptik depolama sistemi<br />• 10 kW güneş enerjisi üretim kapasitesi",
+        "İVO Bio, tam donanımlı ve kendi kendine yetebilen altyapı sistemleriyle öne çıkar. Güçlü su yönetimi, yüksek kapasiteli atık çözümü ve yenilenebilir enerji üretimi sayesinde kullanıcıya bağımsız bir yaşam deneyimi sunar.<br /><br />• 10 ton temiz su kapasitesi<br />• 10 ton foseptik depolama sistemi<br />• 10 kW güneş enerjisi üretim kapasitesi",
       video: "/infography/02.mp4",
       videoUrl: "https://www.youtube.com/watch?v=I1unv9CqMNA",
     },
@@ -35,7 +35,7 @@ const TechnicalSection = () => {
       id: 3,
       title: "Yapı Özellikleri",
       description:
-        "İVO BİO, dayanıklı taşıyıcı sistemler, gelişmiş yalıtım çözümleri ve premium dış cephe malzemeleriyle dört mevsim konfor ve güvenilirlik sunar.<br /><br />• 14 ton ağır çelik konstrüksiyon<br />• Isı yalıtımlı doğrama sistemleri<br /> • Çatı penceresi uygulaması<br /> • Cam içi jaluzi sistemi<br /> • Alev almaz 30 density dış duvar köpüğü<br /> • Doğal taş kaplama dış cephe ",
+        "İVO Bio, dayanıklı taşıyıcı sistemler, gelişmiş yalıtım çözümleri ve premium dış cephe malzemeleriyle dört mevsim konfor ve güvenilirlik sunar.<br /><br />• 14 ton ağır çelik konstrüksiyon<br />• Isı yalıtımlı doğrama sistemleri<br /> • Çatı penceresi uygulaması<br /> • Cam içi jaluzi sistemi<br /> • Alev almaz 30 density dış duvar köpüğü<br /> • Doğal taş kaplama dış cephe ",
       video: "/infography/03.mp4",
       videoUrl: "https://www.youtube.com/watch?v=I1unv9CqMNA",
     },
@@ -43,7 +43,7 @@ const TechnicalSection = () => {
       id: 4,
       title: "Akıllı Ev Sistemleri",
       description:
-        "İVO BİO, entegre akıllı ev teknolojileriyle güvenlikten iklimlendirmeye tüm sistemleri tek noktadan kontrol ederek modern ve pratik bir yaşam sunar.<br /><br /> • A Sınıfı enerji tüketimi <br /> • Aydınlatma kontrolü<br /> • Güvenlik ve kamera sistemleri<br /> • İntercom entegrasyonu<br /> • Perde ve panjur kontrolü<br /> • Yangın algılama sistemi<br /> • Böcek algılama sensörleri<br /> • Isıtma ve soğutma yönetimi ",
+        "İVO Bio, entegre akıllı ev teknolojileriyle güvenlikten iklimlendirmeye tüm sistemleri tek noktadan kontrol ederek modern ve pratik bir yaşam sunar.<br /><br /> • A Sınıfı enerji tüketimi <br /> • Aydınlatma kontrolü<br /> • Güvenlik ve kamera sistemleri<br /> • İntercom entegrasyonu<br /> • Perde ve panjur kontrolü<br /> • Yangın algılama sistemi<br /> • Böcek algılama sensörleri<br /> • Isıtma ve soğutma yönetimi ",
       image: "/infography/04.webp",
       videoUrl: "https://www.youtube.com/watch?v=I1unv9CqMNA",
     },

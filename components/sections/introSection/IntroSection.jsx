@@ -68,35 +68,35 @@ const IntroSection = () => {
     {
       title: "Yenilikçi Tasarım",
       subtitle:
-        "Eşsiz mimarisiyle dikkat çeken BİO EVO, estetik ve fonksiyonelliği bir araya getiriyor.Her ayrıntı, kullanıcı deneyimini zenginleştirerek yaşam alanlarınıza şıklık katıyor.",
+        "Eşsiz mimarisiyle dikkat çeken İVO Bio, estetik ve fonksiyonelliği bir araya getiriyor.Her ayrıntı, kullanıcı deneyimini zenginleştirerek yaşam alanlarınıza şıklık katıyor.",
       image: "/info1/3.webp",
       position: "left",
     },
     {
       title: "Sadelik & Konfor",
       subtitle:
-        "Ferah ve sade bir yaşam alanı, minimalist tasarım ve sessiz bir atmosfer, İVO BİO'da konforlu bir yaşam deneyimi sizleri bekliyor.",
+        "Ferah ve sade bir yaşam alanı, minimalist tasarım ve sessiz bir atmosfer, İVO Bio'da konforlu bir yaşam deneyimi sizleri bekliyor.",
       image: "/info1/4.webp",
       position: "right",
     },
     {
       title: "Doğal ve Sağlıklı Yaşam",
       subtitle:
-        "Temiz hava ve doğallık, sağlıklı bir yaşamın temelini oluşturur. İVO BİO, yaz ve kış dengesini mükemmel bir şekilde kurarak her mevsimde konforu garanti ediyor.",
+        "Temiz hava ve doğallık, sağlıklı bir yaşamın temelini oluşturur. İVO Bio, yaz ve kış dengesini mükemmel bir şekilde kurarak her mevsimde konforu garanti ediyor.",
       image: "/info1/5.webp",
       position: "left",
     },
     {
       title: "Doğal İç Mekanlar",
       subtitle:
-        "Doğal malzemelerle tasarlanmış iç mekanlar, sıcak ve davetkar bir atmosfer sunar. Her detayında doğallık hissi, İVO BİO'da yaşam alanlarınızı benzersiz kılar.",
+        "Doğal malzemelerle tasarlanmış iç mekanlar, sıcak ve davetkar bir atmosfer sunar. Her detayında doğallık hissi, İVO Bio'da yaşam alanlarınızı benzersiz kılar.",
       image: "/info1/8.webp",
       position: "right",
     },
     {
       title: "Akıllı Yaşam, Akıllı Ev",
       subtitle:
-        "İVO BİO’nun akıllı ev sistemi, yaşamınızı daha konforlu ve kontrollü hale getirir. Tek dokunuşla eviniz, sizin ihtiyaçlarınıza uyum sağlar ve günlük hayatınızı kolaylaştırır.",
+        "İVO Bio’nun akıllı ev sistemi, yaşamınızı daha konforlu ve kontrollü hale getirir. Tek dokunuşla eviniz, sizin ihtiyaçlarınıza uyum sağlar ve günlük hayatınızı kolaylaştırır.",
       image: "/info1/7.webp",
       position: "left",
     },
@@ -104,7 +104,7 @@ const IntroSection = () => {
     {
       title: "Modüler ve Hızlı Çözümler",
       subtitle:
-        "İVO BİO, farklı yaşam tarzlarına uyum sağlayan esnek tasarımıyla ihtiyaçlarınıza tam olarak karşılık verir. Hızlı teslimat ve kurulum sayesinde hayalinizdeki yaşam alanına kısa sürede kavuşun.",
+        "İVO Bio, farklı yaşam tarzlarına uyum sağlayan esnek tasarımıyla ihtiyaçlarınıza tam olarak karşılık verir. Hızlı teslimat ve kurulum sayesinde hayalinizdeki yaşam alanına kısa sürede kavuşun.",
       image: "/info1/6.webp",
       position: "right",
     },
@@ -118,7 +118,7 @@ const IntroSection = () => {
         className="h-screen flex items-center justify-center sticky top-0 z-10"
       >
         <h1 className="font-quicksand text-[220px] font-bold text-center text-yesil leading-tight">
-          İVO BİO <br /> İle Tanışın
+          İVO Bio <br /> İle Tanışın
         </h1>
       </div>
 

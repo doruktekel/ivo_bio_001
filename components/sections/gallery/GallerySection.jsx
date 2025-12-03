@@ -84,7 +84,7 @@ const GallerySection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-[120px] font-bold text-yesil mb-4">
-            İVO BİO'YU KEŞFET
+            İVO Bio'yu Keşfet
           </h1>
         </div>
 

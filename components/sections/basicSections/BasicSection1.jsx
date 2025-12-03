@@ -94,7 +94,7 @@ const BasicSection1 = () => {
           ref={title1Ref}
           className="text-[120px] text-yesil font-quicksand font-medium"
         >
-          İVO BİO
+          İVO Bio
         </p>
         <p ref={title2Ref} className="text-[80px] font-quicksand text-white">
           Ekonomik Villa Yaşamı

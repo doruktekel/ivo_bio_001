@@ -10,7 +10,7 @@ const AdvertiseHeader = () => {
   // Menü öğeleri - artık obje formatında ve id içeriyor
   const menuItems = [
     {
-      name: "İVO BİO Nedir?",
+      name: "İVO Bio Nedir?",
       id: "intro",
     },
     {
@@ -18,11 +18,11 @@ const AdvertiseHeader = () => {
       id: "tanitim-filmi",
     },
     {
-      name: "İVO BİO Teknik",
+      name: "İVO Bio Teknik",
       id: "teknik",
     },
     {
-      name: "İVO BİO Kişisel",
+      name: "İVO Bio Kişisel",
       id: "kisisel",
     },
     {

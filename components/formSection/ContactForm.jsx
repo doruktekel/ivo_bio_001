@@ -37,7 +37,7 @@ const ContactForm = () => {
               <span className="block text-gray-500">Geçin</span>
             </h2>
             <p className="text-lg text-gray-500 leading-relaxed">
-              İVO BİO hakkında bilgi almak için veya İVO BİO ile ilgili
+              İVO Bio hakkında bilgi almak için veya İVO Bio ile ilgili
               sorularınız için bizimle iletişime geçin.
             </p>
             <p className="text-lg text-gray-500 leading-relaxed">
