@@ -117,8 +117,8 @@ const IntroSection = () => {
         ref={titleRef}
         className="h-screen flex items-center justify-center sticky top-0 z-10"
       >
-        <h1 className="font-quicksand text-[220px] font-bold text-center text-yesil leading-tight">
-          İVO Bio <br /> İle Tanışın
+        <h1 className="font-quicksand text-[220px] font-bold text-center leading-tight">
+          <span className="text-yesil">İVO Bio</span> <br /> İle Tanışın
         </h1>
       </div>
 

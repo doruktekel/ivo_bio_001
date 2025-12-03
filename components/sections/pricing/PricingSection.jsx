@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from "react";
 
 const PricingSection = () => {
@@ -26,10 +27,10 @@ const PricingSection = () => {
               if (card) {
                 setTimeout(() => {
                   card.style.transition =
-                    "all 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
+                    "all 1.2s cubic-bezier(0.4, 0, 0.2, 1)";
                   card.style.opacity = "1";
                   card.style.transform = "translateY(0)";
-                }, index * 200);
+                }, index * 400);
               }
             });
           }
@@ -63,8 +64,7 @@ const PricingSection = () => {
         "Kişiselleştirme ve özgün dekorasyon imkânı",
         "Uygun maliyetli başlangıç seviyesi",
       ],
-      image:
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop",
+      image: "/icons/empty_icon.png",
     },
     {
       name: "Lite",
@@ -79,8 +79,7 @@ const PricingSection = () => {
         "Kendi hareketli mobilyalarını getirip hemen yerleşebilme",
         "Konforlu ve dengeli yaşam paketi",
       ],
-      image:
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop",
+      image: "/icons/light_icon.png",
     },
     {
       name: "Pro",
@@ -94,17 +93,21 @@ const PricingSection = () => {
         "Direkt taşınıp hemen yaşama başlama imkânı",
         "En yüksek konfor seviyesinde tam hazır yaşam çözümü",
       ],
-      image:
-        "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=300&fit=crop",
+      image: "/icons/full_icon.png",
     },
   ];
 
   return (
-    <div className="min-h-screen w-full bg-gri flex items-center justify-center p-10 font-quicksand">
+    <div
+      className="min-h-screen w-full bg-gri flex items-center justify-center p-10 font-quicksand font-bold"
+      id="modeller"
+    >
       <div ref={sectionRef} className="max-w-7xl w-full">
         <div className="text-center mb-16 text-white">
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">Fiyatlandırma</h2>
-          <p className="text-xl">Size en uygun planı seçin</p>
+          <h2 className="text-5xl md:text-[100px] font-bold mb-4">
+            <span className="text-yesil">İVO Bio</span> Modelleri
+          </h2>
+          <p className="text-4xl">Size en uygun planı seçebilirsiniz</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -114,42 +117,41 @@ const PricingSection = () => {
               ref={(el) => (cardsRef.current[index] = el)}
               className="group"
             >
-              <div className="h-full rounded-4xl bg-white text-kahverengi transition-all duration-500 overflow-hidden shadow-2xs">
-                <div className="text-center">
-                  <div className="mb-3 w-full h-48 rounded-t-2xl overflow-hidden">
-                    <img
-                      src={plan.image}
-                      alt={plan.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+              <div className="h-full rounded-4xl bg-white text-kahverengi transition-all duration-500 overflow-hidden shadow-lg border border-yesil flex flex-col p-6">
+                <div className="w-full flex justify-center items-center overflow-hidden">
+                  <img
+                    src={plan.image}
+                    alt={plan.name}
+                    className="max-w-80 object-cover"
+                  />
+                </div>
 
-                  <div className="p-6">
-                    <h3 className="text-3xl font-bold mb-2">{plan.name}</h3>
-
-                    <div className="mb-2">
+                <h3 className="text-3xl font-bold text-center">{plan.name}</h3>
+                {/* <div className="mb-2">
                       <span className="text-5xl font-bold">{plan.price}</span>
                       <span className="text-lg">{plan.period}</span>
-                    </div>
+                    </div> */}
 
-                    <p className="mb-2 h-12">{plan.description}</p>
-                    {/* 
-                    <button className="w-full bg-black text-white font-semibold py-3 px-6 rounded-full hover:bg-gray-800 transition-all duration-300 mb-8">
+                <div className="flex flex-col gap-6">
+                  <p className="h-12 text-xl text-center mt-2">
+                    {plan.description}
+                  </p>
+
+                  <ul className="space-y-1 text-left">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-center">
+                        <span className="text-yesil mr-3 text-xl font-bold">
+                          ✓
+                        </span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* <button className="w-full bg-black text-white font-semibold py-3 px-6 rounded-full hover:bg-gray-800 transition-all duration-300 mb-8">
                       Başla
                     </button> */}
-
-                    <ul className="space-y-1 text-left">
-                      {plan.features.map((feature, i) => (
-                        <li key={i} className="flex items-center">
-                          <span className="text-yesil mr-3 text-xl font-bold">
-                            ✓
-                          </span>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
           ))}

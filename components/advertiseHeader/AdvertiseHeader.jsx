@@ -26,6 +26,10 @@ const AdvertiseHeader = () => {
       id: "kisisel",
     },
     {
+      name: "İVO Bio Modelleri",
+      id: "modeller",
+    },
+    {
       name: "İletişim",
       id: "iletisim",
     },
@@ -107,6 +111,13 @@ const AdvertiseHeader = () => {
               className="px-4 py-2"
             />
           </div>
+          {/* <Image
+            src="/icons/full_icon.png"
+            alt="Logo"
+            width={220}
+            height={160}
+            className="px-4 py-2"
+          /> */}
 
           {/* Sağ Kısım: Menü Butonu */}
           <div className="flex flex-col items-end relative">
