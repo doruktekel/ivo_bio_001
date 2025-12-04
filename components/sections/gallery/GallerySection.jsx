@@ -7,11 +7,11 @@ const GallerySection = () => {
   const galleryRef = useRef(null);
 
   // Pinterest tarzı farklı yüksekliklerde görseller
-  const images = Array.from({ length: 21 }, (_, i) => {
+  const images = Array.from({ length: 66 }, (_, i) => {
     const heights = [250, 300, 350, 400, 320, 380, 280];
     return {
       id: i,
-      url: `/gallery/${i + 1}.webp`,
+      url: `/gallery/1 (${i + 1}).webp`,
       height: heights[i % heights.length],
     };
   });
@@ -115,7 +115,7 @@ const GallerySection = () => {
       {/* Modal */}
       {isModalOpen && selectedImage && (
         <div
-          className={`fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-sm transition-opacity duration-300 ${
+          className={`fixed inset-0 z-50 flex items-center justify-center bg-gri/50 backdrop-blur-sm transition-opacity duration-300 ${
             isModalOpen ? "opacity-100" : "opacity-0"
           }`}
           onClick={closeModal}
@@ -123,7 +123,7 @@ const GallerySection = () => {
           {/* Close Button */}
           <button
             onClick={closeModal}
-            className="absolute top-6 right-6 z-50 p-3 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md transition-all duration-300 group"
+            className="absolute top-6 right-6 z-50 p-3 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md transition-all duration-300 group border-2 border-white cursor-pointer "
             aria-label="Kapat"
           >
             <IoClose className="w-6 h-6 text-white group-hover:rotate-90 transition-transform duration-300" />
@@ -135,7 +135,7 @@ const GallerySection = () => {
               e.stopPropagation();
               navigateImage("prev");
             }}
-            className="absolute left-6 z-50 p-4 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md transition-all duration-300 group"
+            className="absolute left-6 z-50 p-4 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md transition-all duration-300 group border-2 border-white cursor-pointer"
             aria-label="Önceki"
           >
             <IoChevronBack className="w-8 h-8 text-white group-hover:-translate-x-1 transition-transform duration-300" />
@@ -147,7 +147,7 @@ const GallerySection = () => {
               e.stopPropagation();
               navigateImage("next");
             }}
-            className="absolute right-6 z-50 p-4 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md transition-all duration-300 group"
+            className="absolute right-6 z-50 p-4 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md transition-all duration-300 group border-2 border-white cursor-pointer"
             aria-label="Sonraki"
           >
             <IoChevronForward className="w-8 h-8 text-white group-hover:translate-x-1 transition-transform duration-300" />
@@ -161,7 +161,7 @@ const GallerySection = () => {
             <img
               src={selectedImage.url}
               alt={`Gallery ${selectedImage.id + 1}`}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl animate-in fade-in zoom-in duration-500"
+              className="max-w-full max-h-[90vh] object-contain rounded-4xl shadow-2xl animate-in fade-in zoom-in duration-500"
             />
             <div className="absolute -bottom-16 left-0 right-0 text-center">
               <p className="text-white text-lg font-medium bg-black/50 backdrop-blur-sm rounded-full px-6 py-2 inline-block">
